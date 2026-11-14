@@ -1,2 +1,1 @@
-# Linux-Scratch
-Documenting linux - Commands ,notes &amp; practice 
+# Documenting linux - Commands ,notes & practice 

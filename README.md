@@ -1,1 +1,1 @@
-# Documenting linux - Commands ,notes & practice 
+# Documentation of linux - Commands ,notes & practice 

@@ -43,7 +43,7 @@ Day 1 - Linux Commands
 - adduser sohail - create new user
 - who - who is logged in
 
-6. Networking - Cloud Engineer Core
+6. Networking.
 - ping google.com - check internet
 - ip a - show my IP address
 - hostname -I - show my private IP
@@ -52,3 +52,21 @@ Day 1 - Linux Commands
 - ss -tulpn - which ports are open
 - ssh user@server-ip - login to remote server
 - scp file.txt user@server:/tmp/ - copy file to server
+
+7. rocesses
+- Check Processes
+- ps aux
+- top
+- ps aux | grep nginx
+
+8. Kill Process
+kill <PID>
+kill -9 <PID>
+
+9. Services
+- systemctl status nginx
+- systemctl start nginx
+- systemctl stop nginx
+- systemctl restart nginx
+
+

@@ -53,20 +53,62 @@ Day 1 - Linux Commands
 - ssh user@server-ip - login to remote server
 - scp file.txt user@server:/tmp/ - copy file to server
 
-7. rocesses
-- Check Processes
+7. Processes
+# Check Processes
 - ps aux
 - top
 - ps aux | grep nginx
 
-8. Kill Process
-kill <PID>
-kill -9 <PID>
+# Kill Process
+- kill <PID>
+- kill -9 <PID>
 
-9. Services
+8. Services
 - systemctl status nginx
 - systemctl start nginx
 - systemctl stop nginx
 - systemctl restart nginx
+
+9. Disk & Memory
+# Disk Usage
+- df -h
+- du -sh /project/app
+- du -sh *
+
+# Memory Usage
+- free -h
+- top
+
+10.Package Management
+# Update & Install
+- sudo apt update
+- sudo apt install nginx -y
+- sudo apt install git -y
+
+11. Remove & Check
+# sudo apt remove nginx -y
+- dpkg -l | grep nginx
+- which nginx
+
+12. Logs & Troubleshooting
+
+## System Logs
+- journalctl -xe
+- journalctl -u nginx
+- dmesg | tail
+
+## File Logs
+- tail -f /var/log/syslog
+- cat /var/log/nginx/error.log
+- grep -i "error" /var/log/syslog
+
+13. Compression & Backup
+## Compress
+- tar -czf backup.tar.gz /project/app
+- zip -r backup.zip /project/app
+
+## Extract
+- tar -xzf backup.tar.gz
+- unzip backup.zip
 
 
